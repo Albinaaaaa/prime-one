@@ -1,0 +1,28 @@
+$button-color1: #000;
+$button-background1: #fff;
+
+$button-color2: #fff;
+$button-background2: #000;
+
+.btn {
+    max-width: 189px;
+    line-height: 5rem;
+    font-size: 1.5rem;
+    padding: 0 33px;
+    font-family: $font-family3;
+    text-transform: uppercase;
+    display: inline-block;
+    background-color: $button-background2;
+    letter-spacing: 0.1em;
+    color: $button-color2;
+
+    &--w{
+    background-color: $button-background1;
+    color: $button-color1;
+    }
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
