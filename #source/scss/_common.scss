@@ -5,7 +5,7 @@ $button-color2: #fff;
 $button-background2: #000;
 
 .btn {
-    max-width: 189px;
+    max-width: 175px;
     line-height: 5rem;
     font-size: 1.5rem;
     padding: 0 33px;
@@ -13,7 +13,7 @@ $button-background2: #000;
     text-transform: uppercase;
     display: inline-block;
     background-color: $button-background2;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.05em;
     color: $button-color2;
 
     &--w{
