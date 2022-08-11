@@ -1,4 +1,3 @@
-
 // replace elements
 
 const headerTop = document.querySelector(".header-top");
@@ -44,5 +43,3 @@ document.body.addEventListener("keydown", function (event) {
     }
   }
 });
-
-//# sourceMappingURL=main.js.map
