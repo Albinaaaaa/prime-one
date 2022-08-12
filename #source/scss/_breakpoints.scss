@@ -204,6 +204,26 @@
             }
         }
     }
+
+    .contacts {
+
+        &-content {
+            display: block;
+
+            &__map {
+                height: 300px;
+            }
+
+            &-form {
+                padding: 30px;
+
+                &-body {
+                    width: 100%;
+                    max-width: none;
+                }
+            }
+        }
+    }
 }
 
 @media (max-width:576px) {
@@ -256,6 +276,21 @@
         }
 
         &-body {
+            &__column {
+                flex: 1 1 100%;
+            }
+        }
+    }
+
+    .contacts {
+        padding: 50px 0;
+
+        &__title {
+            font-size: 4rem;
+        }
+
+        &-body {
+            
             &__column {
                 flex: 1 1 100%;
             }

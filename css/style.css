@@ -505,6 +505,127 @@ h6 {
   font-size: 1.5rem;
 }
 
+.contacts {
+  padding: 80px 0;
+}
+.contacts__title {
+  font-family: "AkzidenzGrotesk";
+  font-size: 5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: 30px;
+}
+.contacts-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.contacts-body__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  margin-bottom: 15px;
+}
+.contacts-body__column:hover .contacts-body__item {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.contacts-body__item {
+  font-size: 1.5rem;
+  color: #000000;
+  display: inline-block;
+  line-height: 2.7rem;
+  padding-left: 30px;
+}
+.contacts-body__item--1 {
+  background: url("../img/map_icon.svg") left center no-repeat;
+}
+.contacts-body__item--2 {
+  background: url("../img/mail_icon.svg") left center no-repeat;
+}
+.contacts-body__item--3 {
+  background: url("../img/phone_icon.svg") left center no-repeat;
+}
+.contacts-social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+.contacts-social__item {
+  width: 35px;
+}
+.contacts-social__item:not(:last-child) {
+  margin-right: 25px;
+}
+.contacts-social__item svg {
+  border-radius: 50%;
+  -webkit-transition: fill 0.3s ease 0s;
+  transition: fill 0.3s ease 0s;
+}
+.contacts-social__item:hover {
+  background-color: #000;
+  border-radius: 50%;
+}
+.contacts-social__item:hover svg {
+  fill: #fff;
+}
+.contacts-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #000;
+}
+.contacts-content__column {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+}
+.contacts-content__map {
+  height: 100%;
+}
+.contacts-content-form {
+  padding: 55px 60px;
+}
+.contacts-content-form__title {
+  font-family: "AkzidenzGrotesk";
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  letter-spacing: 0.05em;
+}
+.contacts-content-form-body {
+  max-width: 375px;
+}
+.contacts-content-form-body > *:not(:last-child) {
+  margin: 0 0 25px 0;
+}
+.contacts-content-form-line {
+  margin: 0;
+}
+.contacts-content-form__btn {
+  max-width: 190px;
+}
+
+.input {
+  border: 2px solid #959595;
+  background-color: #252525;
+  height: 50px;
+  padding: 5px 18px;
+  color: #ffffff;
+  font-family: "PT Sans";
+  font-weight: 700;
+  font-size: 1.5rem;
+  width: 100%;
+}
+.input--area {
+  height: 100px;
+  resize: none;
+}
+
 @media (max-width: 1400px) {
   .why-top__text {
     font-size: 4.3rem;
@@ -691,6 +812,20 @@ h6 {
   .why-body-item-body > *:not(:last-child) {
     margin-bottom: 15px;
   }
+
+  .contacts-content {
+    display: block;
+  }
+  .contacts-content__map {
+    height: 300px;
+  }
+  .contacts-content-form {
+    padding: 30px;
+  }
+  .contacts-content-form-body {
+    width: 100%;
+    max-width: none;
+  }
 }
 @media (max-width: 576px) {
   .header {
@@ -726,6 +861,18 @@ h6 {
     padding: 15px;
   }
   .why-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+  }
+
+  .contacts {
+    padding: 50px 0;
+  }
+  .contacts__title {
+    font-size: 4rem;
+  }
+  .contacts-body__column {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
