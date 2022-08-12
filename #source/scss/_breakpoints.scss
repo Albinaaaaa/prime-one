@@ -283,7 +283,7 @@
     }
 
     .contacts {
-        padding: 50px 0;
+        padding: 50px 0 0 0;
 
         &__title {
             font-size: 4rem;
@@ -293,6 +293,19 @@
             
             &__column {
                 flex: 1 1 100%;
+            }
+        }
+    }
+
+    .footer {
+        padding: 20px 0;
+
+        &-body {
+            height: auto;
+            flex-direction: column-reverse;
+
+            & > *:last-child {
+                margin-bottom: 10px;
             }
         }
     }

@@ -506,7 +506,7 @@ h6 {
 }
 
 .contacts {
-  padding: 80px 0;
+  padding: 80px 0 0 0;
 }
 .contacts__title {
   font-family: "AkzidenzGrotesk";
@@ -626,6 +626,29 @@ h6 {
   resize: none;
 }
 
+.footer-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 125px;
+}
+.footer__text {
+  color: #4d4d4d;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
+}
+.footer__text a {
+  color: #4d4d4d;
+}
+.footer__text:hover a {
+  text-decoration: underline;
+}
 @media (max-width: 1400px) {
   .why-top__text {
     font-size: 4.3rem;
@@ -867,7 +890,7 @@ h6 {
   }
 
   .contacts {
-    padding: 50px 0;
+    padding: 50px 0 0 0;
   }
   .contacts__title {
     font-size: 4rem;
@@ -876,6 +899,20 @@ h6 {
     -webkit-box-flex: 1;
         -ms-flex: 1 1 100%;
             flex: 1 1 100%;
+  }
+
+  .footer {
+    padding: 20px 0;
+  }
+  .footer-body {
+    height: auto;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .footer-body > *:last-child {
+    margin-bottom: 10px;
   }
 }
 @media (max-width: 425px) {

@@ -1,0 +1,29 @@
+$text-color: #4d4d4d;
+
+.footer {
+
+    &-body {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 125px;
+
+        &__column {}
+    }
+
+    &__text {
+        color: $text-color;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
+
+        a {
+            color: $text-color;
+        }
+
+        &:hover a{
+            text-decoration: underline;
+        }
+    }
+
+    &__logo {}
+}
