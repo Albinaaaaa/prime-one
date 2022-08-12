@@ -404,6 +404,17 @@ h6 {
   background-color: #000;
   max-height: 150px;
 }
+.why-top__column:first-child {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
 .why-top__image {
   position: relative;
   padding-bottom: 150px;
@@ -424,7 +435,7 @@ h6 {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   text-align: right;
-  padding: 55px 60px;
+  padding-right: 30px;
 }
 .why-row {
   display: -webkit-box;
@@ -494,6 +505,12 @@ h6 {
   font-size: 1.5rem;
 }
 
+@media (max-width: 1400px) {
+  .why-top__text {
+    font-size: 4.3rem;
+    padding: 30px;
+  }
+}
 @media (max-width: 992px) {
   .private-body {
     padding: 60px 0px 60px 40px;
@@ -638,6 +655,42 @@ h6 {
     font-size: 1.2rem;
     text-align: center;
   }
+
+  .why-top__column:first-child {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .why-top__column:last-child {
+    display: none;
+  }
+  .why-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 50%;
+            flex: 1 1 50%;
+  }
+  .why-body-item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .why-body-item-body {
+    padding: 5px;
+    text-align: center;
+  }
+  .why-body-item-body > *:not(:last-child) {
+    margin-bottom: 15px;
+  }
 }
 @media (max-width: 576px) {
   .header {
@@ -665,6 +718,17 @@ h6 {
   }
   .private-body__title {
     font-size: 4rem;
+  }
+
+  .why-top__text {
+    font-size: 4rem;
+    text-align: center;
+    padding: 15px;
+  }
+  .why-body__column {
+    -webkit-box-flex: 1;
+        -ms-flex: 1 1 100%;
+            flex: 1 1 100%;
   }
 }
 @media (max-width: 425px) {

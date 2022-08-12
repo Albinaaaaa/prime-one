@@ -13,6 +13,12 @@
             max-height: 150px;
         }
 
+        &__column:first-child {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+
         &__image{
             position: relative;
             padding-bottom: 150px;
@@ -35,7 +41,7 @@
             text-transform: uppercase;
             letter-spacing: 0.1em;
             text-align: right;
-            padding: 55px 60px;
+            padding-right: 30px;
         }
     }
 
