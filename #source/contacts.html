@@ -270,20 +270,23 @@
         <div class="contacts-content__column">
             <div class="contacts-content-form">
                 <div class="contacts-content-form__title">Get in touch</div>
-                <div class="contacts-content-form-body">
+                <form name="form" method="post" class="contacts-content-form-body">
                     <div class="contacts-content-form-line">
-                        <input placeholder="Name" type="text" name="form[]" class="input">
+                        <input placeholder="Name" type="text" name="name" class="input">
                     </div>
                     <div class="contacts-content-form-line">
-                        <input placeholder="E-mail or phone number" type="text" name="form[]" class="input">
+                        <input placeholder="E-mail" type="email" data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" name="email" class="input">
                     </div>
                     <div class="contacts-content-form-line">
-                        <textarea placeholder="Your message" name="form[ъ" class="input input--area"></textarea>
+                        <input placeholder="Phone number" type="text" name="number" class="input">
+                    </div>
+                    <div class="contacts-content-form-line">
+                        <textarea placeholder="Your message" name="text" class="input input--area"></textarea>
                     </div>
                     <div class="contacts-content-form-button">
                         <button type="submit" class="contacts-content-form__btn btn btn--w">Send message</button>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
     </div>
