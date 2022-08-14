@@ -605,9 +605,22 @@ h6 {
 }
 .contacts-content-form-line {
   margin: 0;
+  position: relative;
 }
 .contacts-content-form__btn {
   max-width: 190px;
+}
+.contacts-content-form__characters {
+  color: #959595;
+  position: absolute;
+  position: absolute;
+  bottom: 5px;
+  right: 5px;
+}
+.contacts-content-form__error {
+  color: rgb(199, 13, 13);
+  display: none;
+  margin-top: 5px;
 }
 
 .input {
@@ -624,6 +637,7 @@ h6 {
 .input--area {
   height: 100px;
   resize: none;
+  position: relative;
 }
 
 .footer-body {

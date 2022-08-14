@@ -107,10 +107,30 @@ $background-input: #252525;
 
             &-line{
                 margin: 0;
+                position: relative;
             }
 
             &__btn{
                 max-width: 190px;
+            }
+
+            // input {
+            //     position: relative;
+            // }
+
+            &__characters {
+                color: $border-color;
+                position: absolute;
+                position: absolute;
+                bottom: 5px;
+                right: 5px;
+
+            }
+
+            &__error {
+                color: rgb(199, 13, 13);
+                display: none;
+                margin-top: 5px;
             }
         }
     }
@@ -130,5 +150,6 @@ $background-input: #252525;
     &--area {
         height: 100px;
         resize: none;
+        position: relative;
     }
 }

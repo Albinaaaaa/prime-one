@@ -273,15 +273,20 @@
                 <form name="form" method="post" class="contacts-content-form-body">
                     <div class="contacts-content-form-line">
                         <input placeholder="Name" type="text" name="name" class="input">
+                        <span data-req="name" class="contacts-content-form__error">Name is required</span>
                     </div>
                     <div class="contacts-content-form-line">
-                        <input placeholder="E-mail" type="email" data-pattern="^[\w-\.]+@([\w-]+\.)+[\w-]{2,4}$" name="email" class="input">
+                        <input placeholder="E-mail" type="email" name="email" class="input">
+                        <span data-req="email" class="contacts-content-form__error">Email is required</span>
                     </div>
                     <div class="contacts-content-form-line">
                         <input placeholder="Phone number" type="text" name="number" class="input">
+                        <span data-req="number" class="contacts-content-form__error">Phone number is required</span>
                     </div>
                     <div class="contacts-content-form-line">
-                        <textarea placeholder="Your message" name="text" class="input input--area"></textarea>
+                        <textarea maxlength="30" placeholder="Your message" name="text" class="input input--area"></textarea>
+                        <p class="contacts-content-form__characters">Remain <span>30</span> characters</p>
+                        <span data-req="text" class="contacts-content-form__error">At least 5 characters is required</span>
                     </div>
                     <div class="contacts-content-form-button">
                         <button type="submit" class="contacts-content-form__btn btn btn--w">Send message</button>
